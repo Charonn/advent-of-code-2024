@@ -65,9 +65,11 @@ func part1(input []string) {
 }
 
 func part2(input []string) {
-	sum := 0
+	joined := ""
 	for _, row := range input {
-		sum += evalAdvanced(row)
+		joined += row
 	}
-	fmt.Printf("%s: Part 2: %d\n", day, sum)
+
+	fmt.Printf("%s: Part 2: %d\n", day, evalAdvanced(joined))
 }
+
