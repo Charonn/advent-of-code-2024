@@ -61,7 +61,7 @@ func part1(input []string) {
 	for _, row := range input {
 		sum += eval(row)
 	}
-	fmt.Printf("%s: Part 1: %d\n", day, sum)
+	fmt.Printf("%s: Part 1: %-15d", day, sum)
 }
 
 func part2(input []string) {
@@ -70,6 +70,6 @@ func part2(input []string) {
 		joined += row
 	}
 
-	fmt.Printf("%s: Part 2: %d\n", day, evalAdvanced(joined))
+	fmt.Printf("Part 2: %-15d", evalAdvanced(joined))
 }
 

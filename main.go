@@ -6,14 +6,23 @@ import (
 	"advent-of-code-2024/days/day03"
 	"advent-of-code-2024/days/day04"
 	"advent-of-code-2024/days/day05"
+	"advent-of-code-2024/days/day06"
 	"fmt"
+	"time"
 )
 
+func measureExecutionTime(f func()) {
+	start := time.Now()
+	f()
+	elapsed := time.Since(start)
+	fmt.Printf("\t%.3f\n", elapsed.Seconds())
+}
+
 func main() {
-	fmt.Println("Hello, World!")
-	day01.Run()
-	day02.Run()
-	day03.Run()
-	day04.Run()
-	day05.Run()
+	measureExecutionTime(day01.Run)
+	measureExecutionTime(day02.Run)
+	measureExecutionTime(day03.Run)
+	measureExecutionTime(day04.Run)
+	measureExecutionTime(day05.Run)
+	measureExecutionTime(day06.Run)
 }

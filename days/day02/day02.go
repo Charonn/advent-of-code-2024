@@ -4,7 +4,6 @@ import (
 	utils "advent-of-code-2024/utils"
 	"fmt"
 	"math"
-	"strconv"
 	"strings"
 )
 
@@ -38,7 +37,7 @@ func part1(input []string) {
 		}
 	}
 
-	fmt.Printf("%s: Part 1: %s\n", day, strconv.Itoa(count))
+	fmt.Printf("%s: Part 1: %-15d", day, count)
 }
 
 func part2(input []string) {
@@ -62,5 +61,5 @@ func part2(input []string) {
 			}
 		}
 	}
-	fmt.Printf("%s: Part 2: %d\n", day, count)
+	fmt.Printf("Part 2: %-15d", count)
 }

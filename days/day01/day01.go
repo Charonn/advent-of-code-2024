@@ -35,7 +35,7 @@ func part1(input []string) {
 		sum += int(math.Abs(float64(left[i] - right[i])))
 	}
 
-	fmt.Printf("%s: Part 1: %s\n", day, strconv.Itoa(sum))
+	fmt.Printf("%s: Part 1: %-15d", day, sum)
 }
 
 func part2(input []string) {
@@ -63,5 +63,5 @@ func part2(input []string) {
 		sum += i * count
 	}
 
-	fmt.Printf("%s: Part 2: %s\n", day, strconv.Itoa(sum))
+	fmt.Printf("Part 2: %-15d", sum)
 }

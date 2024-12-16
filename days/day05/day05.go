@@ -49,7 +49,7 @@ func part1(input []string) {
 		
 	}
 
-	fmt.Printf("%s: Part 1: %d\n", day, sum)
+	fmt.Printf("%s: Part 1: %-15d", day, sum)
 }
 
 func part2(input []string) {
@@ -74,5 +74,5 @@ func part2(input []string) {
 		
 	}
 
-	fmt.Printf("%s: Part 2: %d\n", day, sum)
+	fmt.Printf("Part 2: %-15d", sum)
 }
